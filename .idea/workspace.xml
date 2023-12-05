@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dee25085-86bf-49ed-b564-29fd8bc0439c" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit3 Test Class" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/my-spring-step-06/src/main/java/com/framework/beans/factory/support/DefaultListableBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-03/src/main/java/com/framework/factory/support/CglibSubclassingInstantiationStrategy.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-06/src/main/java/com/framework/beans/factory/ConfigurableListableBeanFactory.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-03/src/main/java/com/framework/factory/support/AbstractAutowireCapableBeanFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-05/src/main/java/com/framework/core/io/ResourceLoader.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-03/src/main/java/com/framework/factory/support/DefaultListableBeanFactory.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/my-spring-step-03/src/main/java/com/framework/factory/support/AbstractBeanFactory.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../maven3.6/apache-maven-3.6.3-bin/apache-maven-3.6.3" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\maven3.6\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+    <option name="vmOptions" value="-DarchetypeCatalog-internal" />
+  </component>
+  <component name="ProjectId" id="2YqR0zRTaUvr3kdmROYJAnXcfLt" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-spring-step-06/src/main/java" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CodeWork\idea2021Project\MySpring\my-spring-step-06\src\main\java" />
+      <recent name="E:\CodeWork\idea2021Project\MySpring\my-spring-step-05\src\test\resources" />
+      <recent name="E:\CodeWork\idea2021Project\MySpring\my-spring-step-05\src\main\java\com\framework\beans" />
+      <recent name="E:\CodeWork\idea2021Project\MySpring\my-spring-step-04\src\main\java" />
+      <recent name="E:\CodeWork\idea2021Project\MySpring\my-spring-step-03\src\main\java" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.framework" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.framework.test" />
+      <recent name="com.framework.factory.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ApiTest.test_xml">
+    <configuration name="ApiTest.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-spring-step-05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.framework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.framework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-spring-step-05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.framework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.framework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_file" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-spring-step-05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.framework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.framework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_file" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_url" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-spring-step-05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.framework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.framework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_url" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_xml" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-spring-step-05" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.framework.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.framework.test" />
+      <option name="MAIN_CLASS_NAME" value="com.framework.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_xml" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ApiTest.test_xml" />
+        <item itemvalue="JUnit.ApiTest.test_BeanFactory" />
+        <item itemvalue="JUnit.ApiTest.test (1)" />
+        <item itemvalue="JUnit.ApiTest.test_url" />
+        <item itemvalue="JUnit.ApiTest.test_file" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dee25085-86bf-49ed-b564-29fd8bc0439c" name="Changes" comment="" />
+      <created>1701250904359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1701250904359</updated>
+      <workItem from="1701250905418" duration="1754000" />
+      <workItem from="1701330557043" duration="581000" />
+      <workItem from="1701413774565" duration="9268000" />
+      <workItem from="1701433911138" duration="6941000" />
+      <workItem from="1701500229925" duration="9403000" />
+      <workItem from="1701517839321" duration="4495000" />
+      <workItem from="1701522788831" duration="4168000" />
+      <workItem from="1701575521227" duration="28000" />
+      <workItem from="1701586519429" duration="11004000" />
+      <workItem from="1701603713742" duration="5848000" />
+      <workItem from="1701612868585" duration="885000" />
+      <workItem from="1701675330732" duration="1782000" />
+      <workItem from="1701762769325" duration="7288000" />
+      <workItem from="1701777766435" duration="7418000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

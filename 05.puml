@@ -1,0 +1,169 @@
+@startuml
+interface com.framework.beans.factory.config.SingletonBeanRegistry {
+~ Object getSingleton(String)
+~ void registerSingleton(String,Object)
+}
+interface com.framework.beans.factory.ListableBeanFactory {
+~ Map<String,T> getBeansOfType(Class<T>)
+~ String[] getBeanDefinitionNames()
+}
+class com.framework.core.io.ClassPathResource {
+- String path
+- ClassLoader classLoader
++ InputStream getInputStream()
+}
+class com.framework.beans.PropertyValues {
+- List<PropertyValue> propertyValues
++ void addPropertyValue(PropertyValue)
++ PropertyValue[] getPropertyValues()
++ PropertyValue getPropertyValue(String)
+}
+class com.framework.beans.factory.config.BeanReference {
+- String beanName
++ String getBeanName()
+}
+interface com.framework.beans.factory.BeanFactory {
+~ Object getBean(String)
+~ Object getBean(String,Object)
+~ T getBean(String,Class<T>)
+}
+interface com.framework.beans.factory.HierarchicalBeanFactory {
+}
+class com.framework.beans.factory.support.CglibSubclassingInstantiationStrategy {
++ Object instantiate(BeanDefinition,String,Constructor,Object[])
+}
+class com.framework.core.io.UrlSource {
+- URL url
++ InputStream getInputStream()
+}
+class com.framework.util.ClassUtils {
++ {static} ClassLoader getDefaultClassLoader()
+}
+abstract class com.framework.beans.factory.support.AbstractBeanFactory {
++ Object getBean(String)
++ Object getBean(String,Object)
++ T getBean(String,Class<T>)
+# T doGetBean(String,Object[])
+# {abstract}BeanDefinition getBeanDefinition(String)
+# {abstract}Object createBean(String,BeanDefinition,Object[])
+}
+interface com.framework.core.io.Resource {
+~ InputStream getInputStream()
+}
+class com.framework.beans.factory.support.SimpleInstantiationStrategy {
++ Object instantiate(BeanDefinition,String,Constructor,Object[])
+}
+class com.framework.beans.factory.support.DefaultListableBeanFactory {
+- Map<String,BeanDefinition> beanDefinitionMap
++ void registerBeanDefinition(String,BeanDefinition)
++ BeanDefinition getBeanDefinition(String)
++ boolean containsBeanDefinition(String)
++ Map<String,T> getBeansOfType(Class<T>)
++ String[] getBeanDefinitionNames()
+}
+abstract class com.framework.beans.factory.support.AbstractAutowireCapableBeanFactory {
+- InstantiationStrategy instantiationStrategy
+# Object createBean(String,BeanDefinition,Object[])
+- void applyPropertyValues(String,Object,BeanDefinition)
+# Object createBeanInstance(BeanDefinition,String,Object[])
++ InstantiationStrategy getInstantiationStrategy()
++ void setInstantiationStrategy(InstantiationStrategy)
+}
+class com.framework.core.io.DefaultResourceLoader {
++ Resource getResource(String)
+}
+class com.framework.beans.factory.xml.XmlBeanDefinitionReader {
++ void loadBeanDefinitions(Resource)
++ void loadBeanDefinitions(Resource)
++ void loadBeanDefinitions(String)
+# void doLoadBeanDefinitions(InputStream)
+}
+class com.framework.beans.PropertyValue {
+- String name
+- Object value
++ Object getValue()
++ String getName()
+}
+interface com.framework.beans.factory.config.AutowireCapableBeanFactory {
+}
+interface com.framework.beans.factory.support.BeanDefinitionRegistry {
+~ void registerBeanDefinition(String,BeanDefinition)
+~ BeanDefinition getBeanDefinition(String)
+~ boolean containsBeanDefinition(String)
+~ String[] getBeanDefinitionNames()
+}
+class com.framework.beans.BeansException {
+}
+abstract class com.framework.beans.factory.support.AbstractBeanDefinitionReader {
+- BeanDefinitionRegistry registry
+- ResourceLoader resourceLoader
++ BeanDefinitionRegistry getRegistry()
++ ResourceLoader getResourceLoader()
+}
+class com.framework.beans.factory.config.BeanDefinition {
+- Class beanClass
+- PropertyValues propertyValues
++ PropertyValues getPropertyValues()
++ Class getBeanClass()
++ void setPropertyValues(PropertyValues)
++ void setBeanClass(Class)
+}
+interface com.framework.beans.factory.support.InstantiationStrategy {
+~ Object instantiate(BeanDefinition,String,Constructor,Object[])
+}
+interface com.framework.core.io.ResourceLoader {
+~ String CLASSPATH_URL_PREFIX
+~ Resource getResource(String)
+}
+interface com.framework.beans.factory.config.ConfigurableBeanFactory {
+~ String SCOPE_SINGLETON
+~ String SCOPE_PROTOTYPE
+}
+interface com.framework.beans.factory.support.BeanDefinitionReader {
+~ BeanDefinitionRegistry getRegistry()
+~ ResourceLoader getResourceLoader()
+~ void loadBeanDefinitions(Resource)
+~ void loadBeanDefinitions(Resource)
+~ void loadBeanDefinitions(String)
+}
+class com.framework.core.io.FileSystemResource {
+- File file
+- String path
++ String getPath()
++ InputStream getInputStream()
+}
+interface com.framework.beans.factory.ConfigurableListableBeanFactory {
+~ BeanDefinition getBeanDefinition(String)
+}
+class com.framework.beans.factory.support.DefaultSingletonBeanRegistry {
+- Map<String,Object> singletonObjects
++ Object getSingleton(String)
++ void registerSingleton(String,Object)
+}
+
+
+com.framework.beans.factory.BeanFactory <|-- com.framework.beans.factory.ListableBeanFactory
+com.framework.core.io.Resource <|.. com.framework.core.io.ClassPathResource
+com.framework.beans.factory.BeanFactory <|-- com.framework.beans.factory.HierarchicalBeanFactory
+com.framework.beans.factory.support.InstantiationStrategy <|.. com.framework.beans.factory.support.CglibSubclassingInstantiationStrategy
+com.framework.core.io.Resource <|.. com.framework.core.io.UrlSource
+com.framework.beans.factory.BeanFactory <|.. com.framework.beans.factory.support.AbstractBeanFactory
+com.framework.beans.factory.support.DefaultSingletonBeanRegistry <|-- com.framework.beans.factory.support.AbstractBeanFactory
+com.framework.beans.factory.support.InstantiationStrategy <|.. com.framework.beans.factory.support.SimpleInstantiationStrategy
+com.framework.beans.factory.support.BeanDefinitionRegistry <|.. com.framework.beans.factory.support.DefaultListableBeanFactory
+com.framework.beans.factory.ConfigurableListableBeanFactory <|.. com.framework.beans.factory.support.DefaultListableBeanFactory
+com.framework.beans.factory.support.AbstractAutowireCapableBeanFactory <|-- com.framework.beans.factory.support.DefaultListableBeanFactory
+com.framework.beans.factory.support.AbstractBeanFactory <|-- com.framework.beans.factory.support.AbstractAutowireCapableBeanFactory
+com.framework.core.io.ResourceLoader <|.. com.framework.core.io.DefaultResourceLoader
+com.framework.beans.factory.support.AbstractBeanDefinitionReader <|-- com.framework.beans.factory.xml.XmlBeanDefinitionReader
+com.framework.beans.factory.BeanFactory <|-- com.framework.beans.factory.config.AutowireCapableBeanFactory
+com.framework.beans.RuntimeException <|-- com.framework.beans.BeansException
+com.framework.beans.factory.support.BeanDefinitionReader <|.. com.framework.beans.factory.support.AbstractBeanDefinitionReader
+com.framework.beans.factory.HierarchicalBeanFactory <|-- com.framework.beans.factory.config.ConfigurableBeanFactory
+com.framework.beans.factory.config.SingletonBeanRegistry <|-- com.framework.beans.factory.config.ConfigurableBeanFactory
+com.framework.core.io.Resource <|.. com.framework.core.io.FileSystemResource
+com.framework.beans.factory.ListableBeanFactory <|-- com.framework.beans.factory.ConfigurableListableBeanFactory
+com.framework.beans.factory.config.AutowireCapableBeanFactory <|-- com.framework.beans.factory.ConfigurableListableBeanFactory
+com.framework.beans.factory.config.ConfigurableBeanFactory <|-- com.framework.beans.factory.ConfigurableListableBeanFactory
+com.framework.beans.factory.config.SingletonBeanRegistry <|.. com.framework.beans.factory.support.DefaultSingletonBeanRegistry
+@enduml
